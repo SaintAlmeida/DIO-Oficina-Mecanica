@@ -1,0 +1,90 @@
+Projeto Completo de Banco de Dados para Oficina Mecânica
+Introdução
+Um banco de dados bem estruturado é fundamental para gerenciar eficientemente as operações de uma oficina mecânica. Ele permite controlar serviços realizados, clientes, veículos, peças usadas, funcionários, agendamentos e pagamentos, otimizando o fluxo de trabalho e facilitando a tomada de decisões.
+
+Etapas para criação do projeto
+1. Levantamento de Requisitos
+Antes de modelar o banco, identifique as principais necessidades do negócio:
+
+Cadastro de clientes e seus veículos.
+
+Registro de serviços realizados (troca de óleo, revisão, conserto, etc.).
+
+Controle de peças e materiais utilizados.
+
+Gestão dos funcionários (mecânicos, recepcionistas).
+
+Agendamento de serviços e histórico de atendimentos.
+
+Controle financeiro: orçamentos, pagamentos, formas de pagamento.
+
+2. Definição das Entidades Principais
+Cliente: informações pessoais e contatos.
+
+Veículo: dados do veículo do cliente (modelo, placa, ano).
+
+Funcionário: dados dos colaboradores da oficina.
+
+Serviço: tipos de serviço que a oficina oferece.
+
+Orçamento: proposta de serviço para o cliente, contendo serviços e peças.
+
+Peça: peças e materiais disponíveis em estoque.
+
+Atendimento: registro dos serviços realizados em veículos, vinculados a funcionários.
+
+Pagamento: informações sobre pagamento e forma utilizada.
+
+Agendamento: data e hora para atendimento futuro.
+
+3. Modelagem Conceitual
+Construa o diagrama Entidade-Relacionamento (ER), destacando:
+
+Relacionamentos entre clientes e veículos (um cliente pode ter vários veículos).
+
+Atendimento vinculado ao veículo, funcionário e serviços prestados.
+
+Orçamento relacionado a serviços e peças.
+
+Agendamento associado a cliente, veículo e funcionário.
+
+Controle de pagamentos ligado ao orçamento ou atendimento.
+
+4. Modelagem Lógica
+Converta o modelo ER em tabelas relacionais, definindo:
+
+Chaves primárias para identificar unicamente registros.
+
+Chaves estrangeiras para relacionar tabelas (ex: ClienteID em Veículo).
+
+Atributos relevantes para cada tabela.
+
+Definição de domínios e restrições para garantir integridade.
+
+5. Implementação Física
+Escolha um SGBD (MySQL, PostgreSQL, SQL Server, etc.).
+
+Crie scripts DDL para criação das tabelas, índices, chaves e restrições.
+
+Configure triggers ou procedimentos armazenados para regras de negócio (ex: atualizar estoque ao registrar serviço).
+
+Implemente rotinas de backup e segurança.
+
+6. Testes e Validação
+Insira dados de teste para verificar integridade e funcionamento.
+
+Realize consultas para garantir que informações são recuperadas corretamente.
+
+Teste casos como agendamento duplicado, controle de estoque e pagamentos.
+
+Benefícios do Projeto
+Organização centralizada das informações.
+
+Facilidade no atendimento ao cliente.
+
+Controle eficiente do estoque e serviços.
+
+Relatórios precisos para gestão financeira e operacional.
+
+Melhoria na comunicação interna da oficina.
+
